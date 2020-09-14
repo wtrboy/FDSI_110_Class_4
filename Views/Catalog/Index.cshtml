@@ -1,0 +1,28 @@
+@section Styles {
+    <link href = '/css/catalog.css' rel="stylesheet">
+}
+
+<h2>Catalog of Properties</h2>
+
+<div id="catalog-container">
+    
+</div>
+
+@section Scripts {
+    <script src='/js/catalog.js'></script>
+}
+
+<!--
+
+    1 - create catalog.js and link it on this html
+    2 - onload -> init -> fetchCatalog
+    3 - ajax request
+        GET
+        /catalog/allProperties
+    4 - on success (of ajax)
+        - receive an array
+        - travel the array
+        - display properties on HTML
+
+-->
+

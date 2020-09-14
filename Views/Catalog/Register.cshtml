@@ -1,0 +1,87 @@
+
+@{
+    ViewData["Title"] = "Register Property";
+}
+
+@section Styles {
+    <link href="/css/register.css" rel="stylesheet">
+}
+
+<h2>Register New Property</h2>
+
+<form class="col-8">
+    <div id="alertSaved" class="alert alert-success hide">The property has been registered!</div>
+</form>
+
+
+@section Scripts {
+    <script src="/js/register.js"></script>
+}
+
+<!-- create new form here...
+
+Monthly price:
+Image
+Bedrooms
+Bathroom
+Location
+SqrFeet
+Description
+
+-->
+<form class = "col-8">
+<div class = "form-group row">
+    <label class="col-4 col-form-label">Title:</label>
+    <div class="col-8">
+        <input id="txtTitle" type="text" class="form-control">
+    </div>
+</div>
+
+<div class = "form-group row">
+    <label class="col-4 col-form-label">Rooms:</label>
+    <div class="col-8">
+        <input id="txtRooms" type="number" class="form-control">
+    </div>
+</div>
+
+<div class = "form-group row">
+    <label class="col-4 col-form-label">Bathrooms:</label>
+    <div class="col-8">
+        <input id="txtBathrooms" type="number" class="form-control">
+    </div>
+</div>
+
+<div class = "form-group row">
+    <label class="col-4 col-form-label">Price:</label>
+    <div class="col-8">
+        <input id="txtPrice" type="number" class="form-control">
+    </div>
+</div>
+
+<div class = "form-group row">
+    <label class="col-4 col-form-label">Area (sqft):</label>
+    <div class="col-8">
+        <input id="txtArea" type="number" class="form-control">
+    </div>
+</div>
+
+<div class = "form-group row">
+    <label class="col-4 col-form-label">Image url:</label>
+    <div class="col-8">
+        <input id="txtImage" type="text" class="form-control">
+    </div>
+</div>
+
+<div class = "form-group row">
+    <label class="col-4 col-form-label">Description:</label>
+    <div class="col-8">
+        <textarea id="txtDescription" type="text" class="form-control"></textarea>
+    </div>
+</div>
+
+<div class = "form-group row">
+    <div class="col-8 offset-4">
+        <button type="button" id="btnSave" class="btn btn-info">Save Property</button>
+    </div>
+</div>
+</form>
